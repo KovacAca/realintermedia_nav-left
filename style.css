@@ -56,6 +56,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-end;
   text-align: right;
   position: fixed;
 }
@@ -122,4 +123,53 @@ header p {
   color: var(--lightGray);
   padding: 30px 0;
   line-height: 1.8;
+}
+/***************
+webDev, mobDev, intmarketing
+***************/
+.webDev,
+.mobDev,
+.intMarketing {
+  height: 50vh;
+  display: flex;
+}
+.img {
+  flex: 1;
+  background-position: center;
+  background-size: cover;
+}
+.text {
+  flex: 2;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.webDev .img {
+  background-image: url(img/services1.jpg);
+  
+}
+.mobDev .img {
+  background-image: url(img/services2.jpg);
+}
+.intMarketing .img {
+  background-image: url(img/services3.jpg);
+}
+.webDev .text {
+  background: var(--firstBg);
+}
+.mobDev .text {
+  background: var(--secondBg)
+}
+.intMarketing .text {
+  background: var(--thirdBg);
+}
+.text h3 {
+  font-size: 2rem;
+  color: var(--white);
+}
+.text p {
+  color: var(--lightGray);
+  padding: 20px 0;
 }
