@@ -22,3 +22,64 @@ basic styles
   margin: 0;
   padding: 0;
 }
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+}
+ul {
+  list-style: none;
+}
+/***************
+nav
+***************/
+nav {
+  width: 25%;
+  float: left;
+  background-color: var(--navColor);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  position: fixed;
+}
+nav img {
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+nav ul li {
+  padding: 20px 50px 20px 20px;
+}
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: var(--white);
+  border-bottom: 2px solid var(--border);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: var(--transition);
+}
+nav ul li a:hover {
+  color: var(--lightGray);
+  border-bottom: 2px solid var(--fourthBg);
+}
+nav .icons a {
+  display: inline;
+  border: none;
+  font-size: 1.6rem;
+  margin: 10px 0 0 10px;
+}
+nav ul .icons a:hover {
+  color: var(--fourthBg);
+  border: none;
+}
+/***************
+MAIN
+***************/
+main {
+  width: 75%;
+  float: right;
+}
