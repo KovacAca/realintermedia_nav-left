@@ -30,6 +30,21 @@ body {
 ul {
   list-style: none;
 }
+button {
+  border: 1px solid var(--border);
+  padding: 20px 45px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  background: transparent;
+  border-radius: 40px;
+  color: var(--white);
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+button:hover {
+  background: rgba(255, 255, 255, .2);
+}
 /***************
 nav
 ***************/
@@ -82,4 +97,29 @@ MAIN
 main {
   width: 75%;
   float: right;
+}
+/***************
+header
+***************/
+header {
+  padding-left: 50px;
+  background: linear-gradient(rgba(94, 66, 166, .9), rgba(94, 66, 166, .9)) ,url(img/circle.png);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* button da ne bude preko cele sirine elementa: */
+  align-items: flex-start;
+}
+header h1 {
+  font-size: 4rem;
+  color: var(--white);
+}
+header p {
+  font-size: 1.3rem;
+  color: var(--lightGray);
+  padding: 30px 0;
+  line-height: 1.8;
 }
